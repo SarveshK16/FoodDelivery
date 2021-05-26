@@ -1,0 +1,30 @@
+tr {
+    background-color: maroon;
+    color: white;
+    text-align: center;
+}
+
+dt {
+    font-weight: bold;
+    background-color: maroon;
+    color: white;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: maroon;
+}
+
+.txt {
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.btn {
+    height: 50px;
+    width: 250px;
+
+}
+

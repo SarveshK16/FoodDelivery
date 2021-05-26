@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body style="background-color: lightsalmon;">
+    <div>
+        <font size="6">
+            <table width="800" border="2" cellspacing="4" cellpadding="4" align="center" id="orderform">
+                <tr>
+                    <td colspan="2">
+                        <img class="logo" src="/download.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Customer details</td>
+                </tr>
+                <tr>
+                    <td>Customer Name</td>
+                    <td><input class="txt" type="text" name="" id="txtName"></td>
+                </tr>
+                <tr>
+                    <td>Mobile</td>
+                    <td><input class="txt" type="text" name="" id="txtMobile"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Select a meal</td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="/burger.jpg" alt="" >
+                        <br>
+                        <input type="checkbox" name="meal" id="optburger" value="Burger">Burger(&#8377;120/-)
+                    </td>
+                    <td>
+                        <img src="/roller.jpg" alt="">
+                        <br>
+                        <input type="checkbox" name="meal" id="optRoller" value="Veg Roll">Veg Roll(&#8377;100/-)
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Select Ad-on's
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <img src="/fries.jpg" alt="">
+                        <br>
+                        <input type="checkbox" name="" id="optfries" value="Large Fries">Large Fries(&#8377;60/-)
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input class="btn" type="button" name="Place Order" id="place order" onClick="placeOrder()" value="place order">
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <dl id="order summary" style="display:none">
+            <!-- <h2>Order Summary</h2>
+            <dt>Customer Name</dt>
+            <dd id="lblName"></dd>
+            <dt>Mobile</dt>
+            <dd id="lblMobile"></dd>
+            <dt>Meal</dt>
+            <dd id="lblMeal"></dd>
+            <dt>AD-on's</dt>
+            <dd id="ldlAdd"></dd>
+            <dt>Total Bill Amount</dt>
+            <dd id="lblAmount"></dd>
+            </dl>
+            <br> -->
+            <p >Name: <span id="lblName"></span></p>
+            <p >Mobile Number: <span id="lblMobile"></span></p>
+            <p >Meal: <span id="lblMeal"></span></p>
+            <p >Ad-on's: <span id="lblAdd"></span></p>
+            <p >Amount: <span id="lblAmount"></span></p>
+
+
+            <input type="button" value="print bill" onclick="window.print()" name="" id="">
+            </dl>
+
+            
+
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
