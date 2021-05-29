@@ -44,11 +44,21 @@
                     <img src="burger.jpg" alt="burger" class="burger">
                     <h3>Burger</h3>
                     <p>Price: &#8377; 120/-</p>
+                    <div class="add-rem flex items-center">
+                        <button onclick="min1()" class="min butn">-</button>
+                        <p id="ibtn1" class="butnp" value="">0</p>
+                        <button onclick="max1()" class="max butn">+</button>
+                    </div>
                 </div>
                 <div class="meal-2">
                     <img src="roller.jpg" alt="Veg Roll" class="roll">
                     <h3>Veg Roll</h3>
                     <p>Price: &#8377; 100/-</p>
+                    <div class="add-rem flex items-center">
+                        <button onclick="min2()" class="min butn">-</button>
+                        <p id="ibtn2" class="butnp" value="">0</p>
+                        <button onclick="max2()" class="max butn">+</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -57,10 +67,15 @@
             <h1 class="headings"><span>Add Ons</span> Available</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore totam expedita tempora.</p>
             <div class="add">
-                <div class="item-1">
+                <div class="item-1" id="front">
                     <img src="fries.jpg" alt="Fries" class="fries">
                     <h3>Large Fries</h3>
                     <p>Price: &#8377;60/-</p>
+                    <div class="add-rem flex items-center">
+                        <button onclick="min3()" class="min butn">-</button>
+                        <p id="ibtn3" class="butnp" value="">0</p>
+                        <button onclick="max3()" class="max butn">+</button>
+                    </div>
                 </div>
             </div>
 
@@ -68,13 +83,14 @@
     </section>
 
     <div class="order">
-        <button>Checkout</button>
+        <button class="btn btn-primary cust-btn">Checkout</button>
     </div>
 
     <footer>
         <h3>Thank You for Visiting!</h3>
+        <p>May 2021</p>
     </footer>
 </body>
-<!-- <script src="index.js"></script> -->
+<script src="fp.js"></script>
 
 </html>
