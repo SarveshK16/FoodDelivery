@@ -1,0 +1,217 @@
+@import 'utilities.css';
+:root {
+    --primary: white;
+    --dark: #161616;
+    --pure: #FFFFFF;
+    --ternary: #aba7a2;
+    --light: #F2F2F2;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Baloo 2', cursive;
+}
+
+header {
+    background: var(--ternary);
+    user-select: none;
+    padding: 10px 10px;
+    position:fixed;
+    width: 100%;
+    z-index: 200;
+}
+.container{
+    padding: 0px 10%;
+}
+
+.logo {
+    max-width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    padding: 0.22rem;
+    margin-right: 0.7rem;
+}
+
+.branding {
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #161616;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.logo:hover {
+    padding: 0.05rem;
+}
+
+.branding:hover {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+header nav .left a {
+    color: var(--dark);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+header nav .left{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+header nav .left a:hover {
+    color: var(--primary);
+}
+
+.headings {
+    color: var(--dark);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+
+.content{
+    padding-top: 7rem;
+}
+
+.meal h1{
+    position: relative;
+}
+.meal h1 span {
+    color: var(--ternary);
+}
+
+.headings+p {
+    color: var(--ternary);
+    font-family: 'Baloo 2', cursive;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.content .meal .cards {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.meal-1, .meal-2, .item-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid var(--ternary) 2px;
+    border-radius: 2rem;
+    padding-bottom: 20px;
+    user-select: none;
+    background-color: var(--ternary);
+}
+
+.content .add-on h1 {
+    margin-top: 3rem;
+}
+
+.content .add-on .add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-on .headings span {
+    color: var(--ternary);
+}
+
+.burger, .roll, .fries{
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    padding: 30px;
+    padding-bottom: 10px;
+    border-radius: 0 3.5rem 0 3.5rem;
+}
+.add-rem{
+    padding: 0.5rem;
+}
+.butn{
+    padding: 2.5px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+.butnp{
+    font-size: 1.2rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0px 20px;
+    cursor:default;
+}
+
+.order{
+    padding: 3rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.cust-btn{
+    border: solid var(--ternary) 2px;
+    margin: 0;
+}
+footer h3,footer p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--ternary);
+    padding-top: 1rem;
+}
+footer p{
+    padding-bottom: 0.2rem;
+}
+#pbtn1,#pbtn2,#pbtn3{
+    padding: 2px;
+}
+
+#check{
+    margin-bottom: 10x;
+}
+.after-order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: solid var(--ternary) 2px;
+    border-radius: 1rem;
+}
+
+.after-order .summary{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+/* .after-order .info{
+    margin-bottom: 100px;;
+} */
+
+.order-summary{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.check-can{
+    padding: 5px;
+}
+.cust-btn2{
+    margin-right: 10px;
+}
