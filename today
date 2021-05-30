@@ -1,0 +1,11 @@
+partial comments on html file.
+
+set lower limit to 0 if item value less than 0 with message(only appears for 1.5sec).
+
+create order receipt with some fields and two buttons in it. buttons-> Place order and Cancel
+
+add functionality to checkout button -> on click display order summary unless order summary hidden
+
+add partial functionality to place order button-> alert 
+
+add functionality to cancel button -> on click order summary again hides and checkout button appears
