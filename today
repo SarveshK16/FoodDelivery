@@ -1,6 +1,6 @@
 partial comments on html file.
 
-set lower limit to 0 if item value less than 0 with message(only appears for 1.5sec).
+For minus button set lower limit to 0 if item value less than 0 with message(only appears for 1.5sec).
 
 create order receipt with some fields and two buttons in it. buttons-> Place order and Cancel
 
