@@ -1,0 +1,73 @@
+body {
+    font-family: 'Baloo 2', cursive;
+    background-color: var(--body);
+}
+
+.social {
+    height: 80px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+form {
+    background-color: var(--body);
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 2px solid var(--ternary);
+    border-radius: 50px;
+}
+
+#head {
+    font-size: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+#social-wrapper {
+    background-color: var(--primary);
+    padding: 26px;
+}
+
+.input-box {
+    font-size: 18px;
+    padding-bottom: 12px;
+    margin-bottom: 36px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--primary);
+    width: 100%;
+    background: none;
+}
+
+#input {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.signup {
+    background-color:var(--primary);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 18px;
+    padding-left: 24px;
+    padding-right: 24px;
+    color: black;
+    border: none;
+    border-radius: 2rem; 
+    cursor: pointer;
+}
+.signup:hover {
+    background-color: var(--ternary);
+    cursor: pointer;
+}
+.sform{
+    padding-top: 200px;
+    padding-bottom: 150px;
+}
