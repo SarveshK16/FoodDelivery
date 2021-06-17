@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoomdPamnda</title>
+    <link rel="stylesheet" href="fp.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <!-- Navigation Bar and Branding with logo -->
+    <header>
+        <div class="container flex justify-between items-center">
+            <!-- Logo -->
+            <div class="branding flex justify-between items-center">
+                <a href="fp.html"><img class="logo" src="/icons8-panda-50.png" alt=""></a>
+            </div>
+            <!-- Navigation Items -->
+            <nav class="flex items-center justify-between">
+                <div class="left flex items-center">
+                    <div>
+                        <a href="fp.html">Home</a>
+                        <a href="signup.html">Sign Up</a>
+                        <a href="">Support</a>
+                        <a href="">About Us</a>
+                    </div>
+                </div>
+                <!-- Log In button -->
+                <div class="right">
+                    <button class="btn btn-primary">Log In</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main area for adding food cards starts -->
+    <section class="content">
+        <!-- First Category of food -->
+        <div class="meal">
+            <!-- Meal heading with some description -->
+            <h1 class="headings"><span>Meals</span> Available</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore totam expedita tempora.</p>
+            <div class="cards">
+                <!-- First Meal Card -->
+                <div class="meal-1">
+                    <img src="burger.jpg" alt="burger" class="burger">
+                    <h3>Burger</h3>
+                    <p class="price">Price: &#8377; 120/-</p>
+                    <!-- Class for adding quantity -->
+                    <div class="add-rem flex items-center">
+                        <!-- Button with Triggering function min1() on click -->
+                        <button onclick="min1()" class="min-btn">-</button>
+                        <!-- paragraph type text to show quantity -->
+                        <p id="ibtn1" class="butnp" value="">0</p>
+                        <!-- Button with Triggering function min1() on click -->
+                        <button onclick="max1()" class="max-btn">+</button>
+                    </div>
+                    <p id="pbtn1"></p>
+                </div>
+                <!-- Second Meal Card -->
+                <div class="meal-2">
+                    <img src="roller.jpg" alt="Veg Roll" class="roll">
+                    <h3>Veg Roll</h3>
+                    <p class="price">Price: &#8377; 100/-</p>
+                    <div class="add-rem flex items-center">
+                        <button onclick="min2()" class="min-btn">-</button>
+                        <p id="ibtn2" class="butnp" value="">0</p>
+                        <button onclick="max2()" class="max-btn">+</button>
+                    </div>
+                    <p id="pbtn2"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Category of food -->
+        <div class="add-on">
+            <h1 class="headings"><span>Add Ons</span> Available</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore totam expedita tempora.</p>
+            <div class="add-ons">
+                <div class="add-1">
+                    <div class="item-1" id="front">
+                        <img src="fries.jpg" alt="Fries" class="fries">
+                        <h3>Large Fries</h3>
+                        <p class="price">Price: &#8377;60/-</p>
+                        <div class="add-rem flex items-center">
+                            <button onclick="min3()" class="min-btn">-</button>
+                            <p id="ibtn3" class="butnp" value="">0</p>
+                            <button onclick="max3()" class="max-btn">+</button>
+                        </div>
+                        <p id="pbtn3"></p>
+                    </div>
+                </div>
+                <div class="add-2">
+                    <div class="item-2" id="front">
+                        <img src="coke.jpg" alt="Coke" class="coke">
+                        <h3>Coca Cola</h3>
+                        <p class="price">Price: &#8377;40/-</p>
+                        <div class="add-rem flex items-center">
+                            <button onclick="min4()" class="min-btn">-</button>
+                            <p id="ibtn4" class="butnp" value="">0</p>
+                            <button onclick="max4()" class="max-btn">+</button>
+                        </div>
+                        <p id="pbtn4"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Division for order button and Result after clicking it -->
+    <div class="order">
+
+        <button class="btn btn-primary cust-btn" id="check" onclick="checkout()">Checkout</button>
+
+        <div class="after-order" id="afterOrder" style="display:none">
+            <h3 class="summary">Order Summary</h3>
+            <p id="info">You Ordered following items!</p>
+            <div class="order-summary">
+                <p id="food1"></p>
+                <p id="food2"></p>
+                <p id="food3"></p>
+                <p id="food4"></p>
+                <hr id="line">
+                <p id="total">Total Price : <span id="price"></span> &#8377</p>
+            </div>
+            <div class="check-can">
+                <button class="btn btn-primary cust-btn cust-btn2" id="place" onclick="placeOrder()">Place
+                    Order</button>
+                <button class="btn btn-primary cust-btn" id="can" onclick="can()">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section displaying message and other fields -->
+    <footer>
+        <h3>Thank You for Visiting!</h3>
+        <h5>All rights reserved.</h5>
+    </footer>
+</body>
+
+<!-- Javascript file insertion -->
+<script src="fp.js"></script>
+
+</html>

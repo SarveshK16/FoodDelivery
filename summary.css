@@ -1,0 +1,24 @@
+body {
+    font-family: 'Baloo 2', cursive;
+    background: radial-gradient(white,#f5dba4);
+}
+.msg{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+h1,h2{
+    font-weight: 100;
+}
+.head1{
+    margin-bottom: 20px;
+}
+.hope{
+    margin-top: 20px;
+}
+footer{
+    margin-top: 53.5vh;
+}
